@@ -116,7 +116,7 @@ canvas {
    }
 }
 .progress-bar-title{
-   margin-top: 20%;
+   margin-top: 5%;
    color: #5a5816;
 }
 
@@ -126,7 +126,7 @@ canvas {
    width: 80%;
    max-width: 800px;
    height: 50px;
-   margin: 0 auto;
+   margin: 10px auto;
    
    display: flex;
    align-items: center;
@@ -166,7 +166,7 @@ canvas {
 }
 
 .progress-text {
-   color: #5a5816;;
+   color: #5e96be;;
    font-size: 9px;
    letter-spacing: 2px;
    font-weight: bold;
