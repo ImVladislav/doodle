@@ -3,6 +3,7 @@
 *{box-sizing: border-box;}
 html {
 	background: url(bg.png) top left;
+	overflow: hidden;
 }
 body {
 	margin: 0; padding: 0;
@@ -33,6 +34,17 @@ canvas {
 	left: 0;
 	z-index: -1;	
 	border-image: url(1.png) 100 5 round;
+}
+@media screen and (max-width: 768px) {
+    html, body {
+        height: 100vh; /* Обмежує висоту до висоти екрану */
+        overflow: hidden;
+    }
+
+    .container, canvas {
+        height: 100vh !important; 
+        max-height: 100vh !important;
+    }
 }
 
 #scoreBoard p {
