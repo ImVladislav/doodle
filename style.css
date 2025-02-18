@@ -12,32 +12,23 @@ body {
 
 .container {
 	height: 552px;
-	width: 422px;
+	width: 100%;
 	position: relative;
-	margin: 20px auto 0; 
+	margin: 0 auto ; 
 	overflow: hidden;
 }
 
 canvas {
 	height: 552px;
-	width: 422px;
+	width: 100%;
 	display: block;
 	/* background: url(bg.png) top left; */
 }
 
-#scoreBoard {
-	width: 420px;
-	height: 50px;
-	background: rgba(182, 200, 220, 0.7);
-	position: absolute;
-	top: -3px;
-	left: 0;
-	z-index: -1;	
-	border-image: url(1.png) 100 5 round;
-}
+
 @media screen and (max-width: 768px) {
     html, body {
-        height: 100vh; /* Обмежує висоту до висоти екрану */
+        max-height: 100vh; /* Обмежує висоту до висоти екрану */
         overflow: hidden;
     }
 
