@@ -651,13 +651,19 @@ canvas {
 
 h2, h3, h1 {font-weight: normal}
 h1 {
-	font-size: 60px; 
-	color: #5a5816; 
-	transform: rotate(-10deg);
-	margin: 0px;
+   font-size: 60px; 
+   color: #5a5816; 
+   transform: rotate(-10deg);
+   margin: 0px;
+   transition: transform 0.3s ease, font-size 0.3s ease;
 }
 
-h3 {text-align: right; margin: -10px 20px 0 0; color: #5e96be}
+h1:hover {
+   font-size: 70px; /* Збільшення розміру */
+   transform: rotate(0deg); /* Вирівнювання */
+}
+
+h3 {text-align: right; margin: -10px 20px 0 0; color: #5e96be; margin-bottom: 8px;}
 h3 a {color: #5a5816}
 
 .button {
@@ -673,6 +679,7 @@ h3 a {color: #5a5816}
 	margin-left: auto;
    margin-right: auto;
    margin-top: 20px;
+   padding-bottom: 20px;
 }
 
 .button.tweet {bottom: 100px; background-position: 0 -90px}
@@ -697,4 +704,17 @@ html, body {
       overflow-x: hidden;
       
 }
+
+.hero {
+   margin: 5% 0;
+    width: 200px;
+   height:200px;
+
+}
+
+.hero:hover {
+   transform: scale(1.1);
+   transition: all 0.2s ease-in-out;
+}
+
 
