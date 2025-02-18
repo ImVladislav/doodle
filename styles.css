@@ -6,11 +6,11 @@ body {
    color: white;
    font-family: 'Gloria Hallelujah', cursive;
    min-height: 100vh;
-   height: 100vh; /* фиксированная высота */
+
    display: flex;
    justify-content: center;
    align-items: center;
-   overflow: hidden; /* убираем скролл */
+
 }
 
 @font-face {
@@ -27,7 +27,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   z-index: 0;
 }
@@ -42,7 +42,7 @@ canvas {
    text-align: center;
    padding: 20px;
    position: relative;
-   overflow: hidden;
+   /* overflow: hidden; */
    pointer-events: none; /* Блокує взаємодію з контейнером, дозволяючи курсору реагувати на фон */
 }
 
@@ -135,35 +135,12 @@ canvas {
    cursor: pointer;
    transition: all 0.3s ease;
    position: relative;
-   overflow: hidden;
+   /* overflow: hidden; */
    font-weight: bold;
    color: #5a5816;
 }
 
-.progress-bar:hover {
-   /* background-color: #555; */
-}
 
-.progress-bar::before {
-   /* content: '';
-   position: absolute;
-   top: 0;
-   left: -100%;
-   width: 100%;
-   height: 100%;
-   background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent
-   );
-   transition: 0.5s; */
-}
-
-.progress-bar:hover::before {
-   /* left: 100%;
-   transition: 0.5s; */
-}
 
 .progress-text {
    color: #5e96be;;
@@ -342,7 +319,7 @@ h1 {
    width: 100%;
    height: 100%;
    z-index: -1;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 /* Создаем частицы */
@@ -459,7 +436,7 @@ h1 {
    width: 100%;
    height: 100vh;
    z-index: -1;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 /* Горизонтальные линии */
@@ -584,7 +561,7 @@ canvas {
  body {
    margin: 0;
    padding: 0;
-   overflow: hidden; /* Це дозволить уникнути прокручування сторінки */
+
  }
  
  .container {
@@ -613,11 +590,12 @@ canvas {
 *{box-sizing: border-box;}
 html {
 	background: url(bg.png) top left;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 body {
 	margin: 0; padding: 0;
 	font-family: 'Gloria Hallelujah', cursive;
+   overflow-y: scroll;
 }
 
 .container {
@@ -625,7 +603,7 @@ body {
 	width: 100%;
 	position: relative;
 	margin: 0 auto ; 
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 canvas {
@@ -639,7 +617,7 @@ canvas {
 @media screen and (max-width: 768px) {
     html, body {
         max-height: 100vh; /* Обмежує висоту до висоти екрану */
-        overflow: hidden;
+        
     }
 
     .container, canvas {
@@ -712,3 +690,11 @@ h3 a {color: #5a5816}
 
 .info .key.left {background-position: -92px -621px;}
 .info .key.right {background-position: -92px -641px;}
+
+html, body {
+   height: 100%;
+
+      overflow-x: hidden;
+      
+}
+
