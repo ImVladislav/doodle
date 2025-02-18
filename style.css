@@ -75,10 +75,10 @@ h3 a {color: #5a5816}
 .button {
 	width: 105px;
 	height: 31px;
-	background: url(3.png) 0 0 no-repeat;
+	/* background: url(3.png) 0 0 no-repeat; */
 	display: block;
 	color:  #000;
-	font-size: 12px;
+	font-size: 24px;
 	line-height: 31px;
 	text-decoration: none;
 	position: absolute;
