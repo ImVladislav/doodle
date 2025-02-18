@@ -47,16 +47,19 @@
         No ceilings, no limits, just an infinite sky. Now, he jumps where no doodle has jumped before. Will you bounce
         with him?
       </p>
-      <img class="hero" src="./2.png" alt="logo" class="logo" />
+      <img style="position:relative; z-index: -5;" class="hero" src="./2.png" alt="logo" class="logo" />
 
 
-      <a class="button" href="dex">Buy</a>
+         <!-- Додаємо зображення Doodle -->
+   <img id="jumpingDoodle" src="./324.png" alt="Jumping Doodle" />
 
-      <div style="width: 100%; height: 20px;" ></div>
-    </div>
+   
+   
+  </div>
+  <a class="button" href="dex">Buy</a>
+  <div style="width: 100%; height: 45px;"></div>
   </div>
 
-  <!-- <img id="sprite" src="3.png"/> -->
 
   <script>
     document
@@ -73,6 +76,28 @@
              });
        });
  </script>
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const doodle = document.getElementById("jumpingDoodle");
+    const buyButton = document.querySelector(".button");
+
+    function positionDoodle() {
+        const buttonRect = buyButton.getBoundingClientRect();
+
+        doodle.style.right = 0;
+        doodle.style.top = `${buttonRect.top - 0}px`; // Відступ над кнопкою
+        doodle.style.transform = "translateX(-100%)";
+    }
+
+    // Встановити початкове положення
+    positionDoodle();
+
+    // Перепозиціонувати при зміні розміру екрану
+    window.addEventListener("resize", positionDoodle);
+});
+
+
+   </script>
 </body>
 
 <!-- partial -->
