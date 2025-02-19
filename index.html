@@ -23,26 +23,27 @@
 
     <div id="mainMenu">
       <h1>$DOODLE</h1>
-      <!-- <h3>Our socials,</h3>
-      <h3><a href="https://Telegram/" target="_blank">Telegram</a></h3>
-      <h3>and <a href="https://x.com" target="_blank">X</a></h3>
-      
-      
-      
-    
+      <h3>Our socials,</h3>
+      <h3><a href="https://t.me/FeastablesCoin" target="_blank">Telegram</a></h3>
+      <h3>and <a href="https://x.com/FeastablesCoin" target="_blank">X</a></h3>
+
+
+
+
       <div class="progress-bar-title">Click to copy CA:</div>
       <div class="progress-bar">
         <div class="progress-text" id="progressText">
-          XXXXXXXXX
+          gc6SgE7CJ4GvZy225vocuV3JzmHko1v7PAfTqq3DooD
         </div>
       </div>
 
 
       <p class="info">
         Once just a doodle on a notepad, Doodle always dreamed of reaching the stars. With nothing but his endless hops
-        and unshakable determination, he jumped higher and higher, dodging obstacles, escaping black holes, and outpacing
+        and unshakable determination, he jumped higher and higher, dodging obstacles, escaping black holes, and
+        outpacing
         gravity itself.
-  
+
         But one day, the old screen couldn’t contain him anymore. Doodle has broken free - straight into the blockchain.
         No ceilings, no limits, just an infinite sky. Now, he jumps where no doodle has jumped before. Will you bounce
         with him?
@@ -50,53 +51,53 @@
       <img style="position:relative; z-index: -5;" class="hero" src="./2.png" alt="logo" class="logo" />
 
 
-   <img id="jumpingDoodle" src="./324.png" alt="Jumping Doodle" />
+      <img id="jumpingDoodle" src="./324.png" alt="Jumping Doodle" />
 
-   
-   
+
+
+    </div>
+    <a class="button" href="https://dexscreener.com/solana/gc6SgE7CJ4GvZy225vocuV3JzmHko1v7PAfTqq3DooD">Buy</a>
+    <div style="width: 100%; height: 45px;"></div>
   </div>
-  <a class="button" href="dex">Buy</a>
-  <div style="width: 100%; height: 45px;"></div>
-  </div> -->
 
 
   <script>
     document
-       .getElementById('progressText')
-       .addEventListener('click', function () {
-          const textToCopy = this.textContent;
-          navigator.clipboard
-             .writeText(textToCopy)
-             .then(() => {
-                alert('Text copied to clipboard!');
-             })
-             .catch((err) => {
-                console.error('Failed to copy text: ', err);
-             });
-       });
- </script>
-   <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const doodle = document.getElementById("jumpingDoodle");
-    const buyButton = document.querySelector(".button");
+      .getElementById('progressText')
+      .addEventListener('click', function () {
+        const textToCopy = this.textContent;
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(() => {
+            alert('Text copied to clipboard!');
+          })
+          .catch((err) => {
+            console.error('Failed to copy text: ', err);
+          });
+      });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const doodle = document.getElementById("jumpingDoodle");
+      const buyButton = document.querySelector(".button");
 
-    function positionDoodle() {
+      function positionDoodle() {
         const buttonRect = buyButton.getBoundingClientRect();
 
         doodle.style.right = 0;
         doodle.style.top = `${buttonRect.top - 0}px`; // Відступ над кнопкою
         doodle.style.transform = "translateX(-100%)";
-    }
+      }
 
-    // Встановити початкове положення
-    positionDoodle();
+      // Встановити початкове положення
+      positionDoodle();
 
-    // Перепозиціонувати при зміні розміру екрану
-    window.addEventListener("resize", positionDoodle);
-});
+      // Перепозиціонувати при зміні розміру екрану
+      window.addEventListener("resize", positionDoodle);
+    });
 
 
-   </script>
+  </script>
 </body>
 
 <!-- partial -->
